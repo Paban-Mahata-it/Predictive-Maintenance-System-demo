@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Placement Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .result {
+            font-size: 1.5em;
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Placement Prediction</h2>
+        <form action="/predict" method="post">
+
+
+
+            <label for="s_1">s_1</label>
+            <input type="number" step="any" name="s_1" required>
+
+            <label for="s_2">s_2</label>
+            <input type="number" step="any" name="s_2" required>
+
+            <label for="s_3">s_3</label>
+            <input type="number" step="any" name="s_3" required>
+
+            <label for="s_4">s_4</label>
+            <input type="number" step="any" name="s_4" required>
+
+            <label for="s_5">s_5</label>
+            <input type="number" step="any" name="s_5" required>
+
+            <label for="s_6">s_6</label>
+            <input type="number" step="any" name="s_6" required>
+
+            <label for="s_7">s_7</label>
+            <input type="number" step="any" name="s_7" required>
+
+            <label for="s_8">s_8</label>
+            <input type="number" step="any" name="s_8" required>
+
+            <label for="s_9">s_9</label>
+            <input type="number" step="any" name="s_9" required>
+
+            <label for="s_10">s_10</label>
+            <input type="number" step="any" name="s_10" required>
+
+            <label for="s_11">s_11</label>
+            <input type="number" step="any" name="s_11" required>
+
+            <label for="s_12">s_12</label>
+            <input type="number" step="any" name="s_12" required>
+
+
+
+
+
+            
+            <input type="submit" value="Predict">
+        </form>
+        {% if prediction_text %}
+        <div class="result">{{ prediction_text }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
