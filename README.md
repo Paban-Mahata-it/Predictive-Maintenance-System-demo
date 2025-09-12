@@ -1,4 +1,5 @@
-This Machine Learning model is specifically designed and trained to work only on the CMAPSS FD001 scaled dataset which can be used to predict the Remaining Useful Life(RUL) of jet engines based on various parameters. It's not completely refined yet but i have posted as far as i am done.
+This Machine Learning model is specifically designed and trained to work only on the CMAPSS FD001 scaled dataset which can be used to predict the Remaining Useful Life(RUL) of jet engines based on various parameters. It's not completely refined yet but i have posted as far as i am done. The model performs only on scaled Fd001 data. I have it uploaded "scaled_data.xlsx".
+
 Link - "https://predictive-maintenance-system-demo.onrender.com/"
 
 Sensor Features Used
